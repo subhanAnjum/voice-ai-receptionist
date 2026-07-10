@@ -195,7 +195,7 @@ const BUSINESS_DNA = `
                 const currentDateTime = now.toLocaleString('en-GB', { timeZone: 'Europe/London' });
                 const maxDateObj = new Date(now.getTime() + (14 * 24 * 60 * 60 * 1000));
               const maxDate = maxDateObj.toLocaleString('en-GB', { timeZone: 'Europe/London' });
-              const n8nWebhookUrl = 'http://localhost:5678/webhook/voice-receptionist';
+              const n8nWebhookUrl = process.env.N8NWEBHOOKURL|| 'http://localhost:5678/webhook/voice-receptionist';
               const response = await axios.post(n8nWebhookUrl, {
                 transcript: transcript,
                 callSid: callSid,
