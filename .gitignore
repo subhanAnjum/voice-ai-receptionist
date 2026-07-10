@@ -1,2 +1,33 @@
+# =========================
+# Operating System Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# IDE and Editor Files
+# =========================
+.vscode/
+.idea/
+*.swp
+
+# =========================
+# Dependencies
+# =========================
+node_modules/
+jspm_packages/
+
+# =========================
+# Build Outputs & Logs
+# =========================
+dist/
+build/
+*.log
+npm-debug.log*
+
+# =========================
+# Environment Variables
+# =========================
 .env
-/node_modules
+.env.local
+.env.*.local
